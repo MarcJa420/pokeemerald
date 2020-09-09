@@ -42,6 +42,16 @@
 #define EGG_GROUP_DRAGON        14
 #define EGG_GROUP_UNDISCOVERED  15
 
+// legendary egg groups
+#define EGG_GROUP_SKYCREST      16
+#define EGG_GROUP_BESTIAL       17
+#define EGG_GROUP_TITAN         18
+#define EGG_GROUP_OVERLORD      19
+#define EGG_GROUP_NEBULOUS      20
+#define EGG_GROUP_ENCHANTED     21
+#define EGG_GROUP_ANCESTOR      22
+#define EGG_GROUP_ULTRA         23
+
 #define EGG_GROUPS_PER_MON      2
 
 // Pokemon natures
