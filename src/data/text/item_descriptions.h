@@ -2790,6 +2790,11 @@ static const u8 sPrettyWingDesc[] = _(
     "does nothing.");
 
 static const u8 sShinyCharmDesc[] = _(
-	"A charm that will\n"
+	  "A charm that will\n"
     "raise the chance\n"
     "of Shiny Pokémon.");
+
+static const u8 sBerserkGeneDesc[] = _(
+	  "A genetically \n"
+    "modified sample of\n"
+    "Mew's DNA.");

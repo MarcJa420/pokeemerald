@@ -7461,4 +7461,16 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 0,
     },
+
+    [ITEM_BERSERK_GENE] =
+    {
+        .name = _("Berserk Gene"),
+        .itemId = ITEM_BERSERK_GENE,
+        .price = 1000,
+        .description = sBerserkGeneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    }
 };

@@ -733,7 +733,8 @@ static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare
     	*species == SPECIES_MUNCHLAX || *species == SPECIES_HAPPINY ||
     	*species == SPECIES_MIMEJR || *species == SPECIES_CHINGLING ||
     	*species == SPECIES_BONSLY || *species == SPECIES_BUDEW ||
-    	*species == SPECIES_MANTYKE)
+    	*species == SPECIES_MANTYKE || *species == SPECIES_MEW ||
+      *species == SPECIES_REGIGIGAS)
     {
         motherItem = GetBoxMonData(&daycare->mons[0].mon, MON_DATA_HELD_ITEM);
         fatherItem = GetBoxMonData(&daycare->mons[1].mon, MON_DATA_HELD_ITEM);
@@ -783,6 +784,26 @@ static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare
             *species = SPECIES_MANTINE;
         }
 
+        if(*species == SPECIES_MEW && (motherItem == ITEM_BERSERK_GENE || fatherItem == ITEM_BERSERK_GENE))
+        {
+            *species = SPECIES_MEWTWO;
+        }
+
+        if(*species == SPECIES_REGIGIGAS && (motherItem == ITEM_HARD_STONE || fatherItem == ITEM_HARD_STONE))
+        {
+            *species = SPECIES_REGIROCK;
+        }
+
+        if(*species == SPECIES_REGIGIGAS && (motherItem == ITEM_NEVER_MELT_ICE || fatherItem == ITEM_NEVER_MELT_ICE))
+        {
+            *species = SPECIES_REGICE;
+        }
+
+        if(*species == SPECIES_REGIGIGAS && (motherItem == ITEM_IRON_BALL || fatherItem == ITEM_IRON_BALL))
+        {
+            *species = SPECIES_REGISTEEL;
+        }
+
     }
 }
 
@@ -827,6 +848,10 @@ static u16 DetermineEggSpeciesAndParentSlots(struct DayCare *daycare, u8 *parent
     if (eggSpecies == SPECIES_ILLUMISE && daycare->offspringPersonality & EGG_GENDER_MALE)
     {
         eggSpecies = SPECIES_VOLBEAT;
+    }
+    if (eggSpecies == SPECIES_LATIAS && daycare->offspringPersonality & EGG_GENDER_MALE)
+    {
+        eggSpecies = SPECIES_LATIOS;
     }
 
     // Make Ditto the "mother" slot if the other daycare mon is male.

@@ -1518,3 +1518,6 @@ const u32 gItemIconPalette_WaterMemory[] = INCBIN_U32("graphics/items/icon_palet
 const u32 gItemIconPalette_BugTMHM[] = INCBIN_U32("graphics/items/icon_palettes/bug_tm_hm.gbapal.lz");
 
 const u32 gItemIconPalette_FairyTMHM[] = INCBIN_U32("graphics/items/icon_palettes/fairy_tm_hm.gbapal.lz");
+
+const u32 gItemIcon_BerserkGene[] = INCBIN_U32("graphics/items/icons/berserk_gene.4bpp.lz");
+const u32 gItemIconPalette_BerserkGene[] = INCBIN_U32("graphics/items/icon_palettes/berserk_gene.gbapal.lz");

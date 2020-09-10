@@ -589,4 +589,8 @@ const u32 *const gItemIconTable[][2] =
     [ITEM_ROCK_MEMORY] = {gItemIcon_RockMemory, gItemIconPalette_RockMemory},
     [ITEM_STEEL_MEMORY] = {gItemIcon_SteelMemory, gItemIconPalette_SteelMemory},
     [ITEM_WATER_MEMORY] = {gItemIcon_WaterMemory, gItemIconPalette_WaterMemory},
+  //legendary breeding
+    [ITEM_BERSERK_GENE] = {gItemIcon_BerserkGene, gItemIconPalette_BerserkGene},
+    //[ITEM_DIVINE_PLATE] = {gItemIcon_DivinePlate, gItemIconPalette_DivinePlate},
+    //[ITEM_FALSE_PLATE] = {gItemIcon_FalsePlate, gItemIconPalette_FalsePlate},
 };
